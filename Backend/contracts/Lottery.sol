@@ -116,6 +116,20 @@ contract Lottery is ERC721, Ownable, VRFConsumerBase {
         treasury.transfer(balance);
     }
 
+    function getWinners() external view 
+    returns (
+        address, 
+        address, 
+        address ) {
+        require(lotteryState == LotteryState.Finished, "Lottery is not finished");
+        
+        return (
+            ticketOwners[goldWinner],
+            ticketOwners[silverWinner],
+            ticketOwners[bronzeWinner]
+        );
+    }
+
     // Fallback function to receive Ether
     receive() external payable {}
 }

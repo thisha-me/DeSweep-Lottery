@@ -27,7 +27,7 @@ const TicketPurchase = ({ purchaseNFT }) => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-900 text-white">
       <div className="text-center p-8 rounded">
-        <h2 className="text-2xl font-bold mb-4">Purchase NFT</h2>
+        <h2 className="text-2xl font-bold mb-4">Buy DeSweep Lottery NFT</h2>
         <button onClick={handlePurchase} className="bg-blue-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition">Purchase</button>
         {error && <p className="text-red-500 mt-4">{error}</p>}
         {success && <p className="text-green-500 mt-4">Payment successful!</p>}

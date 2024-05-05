@@ -29,7 +29,7 @@ const Navbar = ({ connectWallet }) => {
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-white font-bold text-xl">DeSweep</Link>
         <div>
-          <Link to="/purchase" className="text-white mr-4 hover:text-blue-400 transition">Purchase NFT</Link>
+          <Link to="/purchase" className="text-white mr-4 hover:text-blue-400 transition">Buy Lottery</Link>
           <Link to="/winners" className="text-white mr-4 hover:text-blue-400 transition">Winners</Link>
           {walletAddress ? (
             <span className="text-white mr-4">Wallet: {truncateAddress(walletAddress)}</span>
